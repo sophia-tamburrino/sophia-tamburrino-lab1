@@ -1,0 +1,71 @@
+commit d84b358e0e7d4c0e38d2bc930836a6e972134011
+Author: sophia-tamburrino <sophia.tamburrino@gwu.edu>
+Date:   Thu Sep 26 15:17:30 2024 -0400
+
+    removed comments, made my local lab1 files match my github files
+
+commit 47de03cb99147840ff56a516be78d2c5a21b1bee
+Author: sophia-tamburrino <sophia.tamburrino@gwu.edu>
+Date:   Thu Sep 26 15:07:55 2024 -0400
+
+    Finally passing all test cases!
+
+commit b30af44180125eca30159bfab22a221869caaba4
+Author: sophia-tamburrino <sophia.tamburrino@gwu.edu>
+Date:   Thu Sep 26 13:59:19 2024 -0400
+
+    getting to run but has some errors
+
+commit 5d247f74f10b238a3f9846091af39df9ef59db51
+Author: sophia-tamburrino <sophia.tamburrino@gwu.edu>
+Date:   Thu Sep 26 13:08:55 2024 -0400
+
+    terminal not running simple encryption
+
+commit df9e973c18ca8860832106812715626701e2bf2c
+Author: sophia-tamburrino <138908749+sophia-tamburrino@users.noreply.github.com>
+Date:   Thu Sep 26 12:52:08 2024 -0400
+
+    Add files via upload
+
+commit 9a0093e74b5205e1c47c8e392d9505a389c8af47
+Author: sophia-tamburrino <sophia.tamburrino@gwu.edu>
+Date:   Thu Sep 26 12:41:15 2024 -0400
+
+    wrote decrypt
+
+commit 5bd2b08362bcd670dd23715344b1d9bb5e5a11b0
+Author: sophia-tamburrino <sophia.tamburrino@gwu.edu>
+Date:   Thu Sep 26 12:27:44 2024 -0400
+
+    encrypt done
+
+commit 958fdd840ff63f65b4b7fd489e4b5694c6d97d5d
+Author: sophia-tamburrino <sophia.tamburrino@gwu.edu>
+Date:   Thu Sep 26 12:10:07 2024 -0400
+
+    committing
+
+commit e16f69d7decfe4819c33e3bd712ade3ee933a82b
+Author: sophia-tamburrino <sophia.tamburrino@gwu.edu>
+Date:   Thu Sep 26 11:57:36 2024 -0400
+
+    first commit
+
+commit 15f509a811919f49af5719874eeff11491986af3
+Author: sophia-tamburrino <sophia.tamburrino@gwu.edu>
+Date:   Wed Sep 25 16:48:00 2024 -0400
+
+    current
+
+commit 82031955e6391707c978e7a7d4b84ec65854173d
+Author: sophia-tamburrino <sophia.tamburrino@gwu.edu>
+Date:   Wed Sep 25 16:20:03 2024 -0400
+
+    updating
+
+commit 3b456abde567f82b15a8b882ac989a15dfa72a4d
+Author: sophia-tamburrino <138908749+sophia-tamburrino@users.noreply.github.com>
+Date:   Wed Sep 25 15:40:52 2024 -0400
+
+    Add files via upload
