@@ -26,7 +26,7 @@ public class Enigma{
     //rotate
     public String decrypt(String message){        
         //TODO
-        
+
     }
 
 
@@ -37,6 +37,15 @@ public class Enigma{
     //have to rotate after this
     public String encrypt(String message){
         //TODO
+        //rotor[0] is inner, rotor[2] is outer
+        for (int i = 0; i < message.length(); i++) {
+            char current = message.charAt(i);
+            //if the letter is in the rotor(it should be)
+            int index = rotors[2].indexOf(current);
+            if (index > -1) { 
+                
+            }
+        }
     }
 
     

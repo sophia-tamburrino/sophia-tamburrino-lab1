@@ -30,7 +30,7 @@ public class Rotor {
                 return i;
             }
         }
-        return 0;
+        return -1;
     }
 
     public char charAt(int idx){
