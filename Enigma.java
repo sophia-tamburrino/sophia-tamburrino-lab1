@@ -36,13 +36,8 @@ public class Enigma{
                 if (indexTwo > -1) {
                     decrypted += rotors[0].charAt(indexTwo);
                 } 
-                else {
-                    return "failed";
-                }
             }
-            else {
-                return "failed";
-            }
+
             rotate();
         }
 
@@ -69,12 +64,6 @@ public class Enigma{
                 if (indexTwo > -1) {
                     encrypted += rotors[2].charAt(indexTwo);
                 }
-                else {
-                    return "failed";
-                }
-            }
-            else {
-                return "failed";
             }
             rotate();
         }
