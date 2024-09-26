@@ -18,14 +18,23 @@ public class Enigma{
         
     }
 
-
+    //reverse encrypt
+    //start at top roter letter
+    //look at inner roter letter
+    //find that in the middle
+    //look at inner roter letter from that middle, return that letter. Decrypted!
+    //rotate
     public String decrypt(String message){        
         //TODO
         
     }
 
 
-    
+    //look at inner roter letter
+    //look at top roter letter 
+    //find that top roter letter on the inner wheel
+    //look up from inner wheel to the top wheel and return that letter. Encrypted!
+    //have to rotate after this
     public String encrypt(String message){
         //TODO
     }
