@@ -15,7 +15,7 @@ public class Rotor {
         //TODO
         char temp2 = this.rotorValues.charAt(rotorValues.length()-1);
         this.rotorValues = temp2 + this.rotorValues.substring(0, this.rotorValues.length()-1);
-        System.out.println(this.rotorValues);
+        //System.out.println(this.rotorValues);
         if (this.rotorValues.charAt(0) == this.startChar) {
             return true;
         }

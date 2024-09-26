@@ -69,8 +69,7 @@ public class Enigma{
             rotate();
         }
 
-
-        System.out.println(encrypted);
+        //System.out.println(encrypted);
         return encrypted;
     }
 
