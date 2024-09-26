@@ -18,7 +18,11 @@ public class Rotor {
         char temp2 = rotorValues.charAt(rotorValues.length()-1);
         temp = temp2 + rotorValues;
         rotorValues = temp;
-        return true;
+        //if after rotating it is back to normal, return true as it is fully rotated. 
+        if (rotorValues.charAt(0) == '#') {
+            return true;
+        }
+        return false;
     }
     
 

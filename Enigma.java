@@ -34,18 +34,32 @@ public class Enigma{
     //look at top roter letter 
     //find that top roter letter on the inner wheel
     //look up from inner wheel to the top wheel and return that letter. Encrypted!
-    //have to rotate after this
+    //have to rotate inner after this
     public String encrypt(String message){
         //TODO
         //rotor[0] is inner, rotor[2] is outer
+        String encrypted = "";
         for (int i = 0; i < message.length(); i++) {
             char current = message.charAt(i);
             //if the letter is in the rotor(it should be)
-            int index = rotors[2].indexOf(current);
+            int index = rotors[0].indexOf(current);
             if (index > -1) { 
-                
+                char firstOuter = rotors[2].charAt(index);
+                int indexTwo = rotors[1].indexOf(firstOuter);
+                if (indexTwo > -1) {
+                    encrypted += rotors[2].charAt(indexTwo);
+                }
+                else {
+                    return "failed";
+                }
             }
+            else {
+                return "failed";
+            }
+            rotate();
         }
+
+        return encrypted;
     }
 
     
