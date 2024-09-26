@@ -27,12 +27,13 @@ public class Enigma{
     public String decrypt(String message){        
         //TODO
         String decrypted = "";
+
         for(int i = 0; i < message.length(); i++) {
             char current = message.charAt(i);
             int index = rotors[2].indexOf(current);
             if (index > -1) {
                 char firstMiddle = rotors[1].charAt(index);
-                int indexTwo = rotors[2].charAt(firstMiddle);
+                int indexTwo = rotors[2].indexOf(firstMiddle);
                 if (indexTwo > -1) {
                     decrypted += rotors[0].charAt(indexTwo);
                 } 
@@ -40,7 +41,7 @@ public class Enigma{
 
             rotate();
         }
-
+        //System.out.println(decrypted);
         return decrypted;
     }
 
@@ -52,11 +53,10 @@ public class Enigma{
     //have to rotate inner after this
     public String encrypt(String message){
         //TODO
-        //rotor[0] is inner, rotor[2] is outer
         String encrypted = "";
+
         for (int i = 0; i < message.length(); i++) {
             char current = message.charAt(i);
-            //if the letter is in the rotor(it should be)
             int index = rotors[0].indexOf(current);
             if (index > -1) { 
                 char firstOuter = rotors[2].charAt(index);
@@ -65,9 +65,12 @@ public class Enigma{
                     encrypted += rotors[2].charAt(indexTwo);
                 }
             }
+
             rotate();
         }
 
+
+        System.out.println(encrypted);
         return encrypted;
     }
 

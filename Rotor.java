@@ -9,17 +9,14 @@ public class Rotor {
         this.startChar = c;
         
         while(!this.rotate());
-            
     }
     
     public boolean rotate(){
         //TODO
-        String temp = "";
-        char temp2 = rotorValues.charAt(rotorValues.length()-1);
-        temp = temp2 + rotorValues;
-        rotorValues = temp;
-        //if after rotating it is back to normal, return true as it is fully rotated. 
-        if (rotorValues.charAt(0) == startChar) {
+        char temp2 = this.rotorValues.charAt(rotorValues.length()-1);
+        this.rotorValues = temp2 + this.rotorValues.substring(0, this.rotorValues.length()-1);
+        System.out.println(this.rotorValues);
+        if (this.rotorValues.charAt(0) == this.startChar) {
             return true;
         }
         return false;
@@ -28,19 +25,12 @@ public class Rotor {
 
     public int indexOf(char c){
         //TODO
-        // String temp = "" + c;
-        // for (int i = 0; i < rotorValues.length(); i++) {
-        //     if (rotorValues.substring(i, i+1).equals(temp)) {
-        //         return i;
-        //     }
-        // }
-        return rotorValues.indexOf(c);
+        return this.rotorValues.indexOf(c);
     }
 
     public char charAt(int idx){
         //TODO
-        //char[] temp = rotorValues.toCharArray();
-        return rotorValues.charAt(idx);
+        return this.rotorValues.charAt(idx);
     }
 }
     
