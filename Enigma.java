@@ -20,13 +20,33 @@ public class Enigma{
 
     //reverse encrypt
     //start at top roter letter
-    //look at inner roter letter
-    //find that in the middle
-    //look at inner roter letter from that middle, return that letter. Decrypted!
+    //look at middle roter letter
+    //find that in the outer
+    //look at inner roter letter from that outer, return that letter. Decrypted!
     //rotate
     public String decrypt(String message){        
         //TODO
+        String decrypted = "";
+        for(int i = 0; i < message.length(); i++) {
+            char current = message.charAt(i);
+            int index = rotors[2].indexOf(current);
+            if (index > -1) {
+                char firstMiddle = rotors[1].charAt(index);
+                int indexTwo = rotors[2].charAt(firstMiddle);
+                if (indexTwo > -1) {
+                    decrypted += rotors[0].charAt(indexTwo);
+                } 
+                else {
+                    return "failed";
+                }
+            }
+            else {
+                return "failed";
+            }
+            rotate();
+        }
 
+        return decrypted;
     }
 
 

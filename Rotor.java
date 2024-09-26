@@ -28,19 +28,19 @@ public class Rotor {
 
     public int indexOf(char c){
         //TODO
-        String temp = "" + c;
-        for (int i = 0; i < rotorValues.length(); i++) {
-            if (rotorValues.substring(i, i+1).equals(temp)) {
-                return i;
-            }
-        }
-        return -1;
+        // String temp = "" + c;
+        // for (int i = 0; i < rotorValues.length(); i++) {
+        //     if (rotorValues.substring(i, i+1).equals(temp)) {
+        //         return i;
+        //     }
+        // }
+        return rotorValues.indexOf(c);
     }
 
     public char charAt(int idx){
         //TODO
-        char[] temp = rotorValues.toCharArray();
-        return temp[idx];
+        //char[] temp = rotorValues.toCharArray();
+        return rotorValues.charAt(idx);
     }
 }
     
